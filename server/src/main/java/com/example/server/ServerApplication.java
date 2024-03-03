@@ -17,7 +17,6 @@ public class ServerApplication {
 	}
 
 	@GetMapping("/v1/hello")
-	@RateLimiter(name = "hello")
 	public String hello() {
 		try {
 			TimeUnit.SECONDS.sleep(1);
